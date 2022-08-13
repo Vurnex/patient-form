@@ -1,0 +1,13 @@
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\bin\Debug\PatientDatabase.accdb
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\bin\Debug\ITS-245Projectv2.exe.config
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\bin\Debug\ITS-245Projectv2.exe
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\bin\Debug\ITS-245Projectv2.pdb
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS-245Projectv2.csprojAssemblyReference.cache
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS_245Projectv2.mainMenuForm.resources
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS_245Projectv2.patientForm.resources
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS_245Projectv2.Properties.Resources.resources
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS-245Projectv2.csproj.GenerateResource.cache
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS-245Projectv2.csproj.CoreCompileInputs.cache
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS-245Projectv2.exe
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\obj\Debug\ITS-245Projectv2.pdb
+C:\Users\hamil133\Documents\ITS-245Projectv2\ITS-245Projectv2\bin\Debug\PatientDatabase2.accdb

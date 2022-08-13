@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PatientDatabaseDataSet" targetNamespace="http://tempuri.org/PatientDatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/PatientDatabaseDataSet.xsd" xmlns="http://tempuri.org/PatientDatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PatientDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PatientDatabaseConnectionString (Settings)" PropertyReference="ApplicationSettings.ITS_245Projectv2.Properties.Settings.GlobalReference.Default.PatientDatabaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PatientTableTableAdapter" GeneratorDataComponentClassName="PatientTableTableAdapter" Name="PatientTable" UserDataComponentName="PatientTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PatientDatabaseConnectionString (Settings)" DbObjectName="PatientTable" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `PatientTable` WHERE ((`PatientID` = ?) AND ((? = 1 AND `OldID` IS NULL) OR (`OldID` = ?)) AND ((? = 1 AND `PtLastName` IS NULL) OR (`PtLastName` = ?)) AND ((? = 1 AND `PtPreviousLastName` IS NULL) OR (`PtPreviousLastName` = ?)) AND ((? = 1 AND `PtFirstName` IS NULL) OR (`PtFirstName` = ?)) AND ((? = 1 AND `HomeAddress1` IS NULL) OR (`HomeAddress1` = ?)) AND ((? = 1 AND `HomeAddress2` IS NULL) OR (`HomeAddress2` = ?)) AND ((? = 1 AND `HomeCity` IS NULL) OR (`HomeCity` = ?)) AND ((? = 1 AND `HomeState/Province/Region` IS NULL) OR (`HomeState/Province/Region` = ?)) AND ((? = 1 AND `HomeZip` IS NULL) OR (`HomeZip` = ?)) AND ((? = 1 AND `Country` IS NULL) OR (`Country` = ?)) AND ((? = 1 AND `Citizenship` IS NULL) OR (`Citizenship` = ?)) AND ((? = 1 AND `PtHomePhone` IS NULL) OR (`PtHomePhone` = ?)) AND ((? = 1 AND `EmergencyPhoneNumber` IS NULL) OR (`EmergencyPhoneNumber` = ?)) AND ((? = 1 AND `PtHomeFax` IS NULL) OR (`PtHomeFax` = ?)) AND ((? = 1 AND `Pager` IS NULL) OR (`Pager` = ?)) AND ((? = 1 AND `EmailAddress` IS NULL) OR (`EmailAddress` = ?)) AND ((? = 1 AND `PtSSN` IS NULL) OR (`PtSSN` = ?)) AND ((? = 1 AND `DateOfBirth` IS NULL) OR (`DateOfBirth` = ?)) AND ((? = 1 AND `Gender` IS NULL) OR (`Gender` = ?)) AND ((? = 1 AND `EthnicAssociation` IS NULL) OR (`EthnicAssociation` = ?)) AND ((? = 1 AND `Religion` IS NULL) OR (`Religion` = ?)) AND ((? = 1 AND `MaritalStatus` IS NULL) OR (`MaritalStatus` = ?)) AND ((? = 1 AND `EmploymentStatus` IS NULL) OR (`EmploymentStatus` = ?)) AND ((? = 1 AND `HospitalMR#` IS NULL) OR (`HospitalMR#` = ?)) AND ((? = 1 AND `DateofExpire` IS NULL) OR (`DateofExpire` = ?)) AND ((? = 1 AND `Referral` IS NULL) OR (`Referral` = ?)) AND ((? = 1 AND `CurrentPrimaryHCPId` IS NULL) OR (`CurrentPrimaryHCPId` = ?)) AND ((? = 1 AND `Specialist1` IS NULL) OR (`Specialist1` = ?)) AND ((? = 1 AND `Specialist2` IS NULL) OR (`Specialist2` = ?)) AND ((? = 1 AND `Specialist3` IS NULL) OR (`Specialist3` = ?)) AND ((? = 1 AND `Specialist4` IS NULL) OR (`Specialist4` = ?)) AND ((? = 1 AND `OriginalStaffHCP` IS NULL) OR (`OriginalStaffHCP` = ?)) AND ((? = 1 AND `CurrentStaffHCP` IS NULL) OR (`CurrentStaffHCP` = ?)) AND ((? = 1 AND `Active` IS NULL) OR (`Active` = ?)) AND ((? = 1 AND `Comments` IS NULL) OR (`Comments` = ?)) AND ((? = 1 AND `DateEntered` IS NULL) OR (`DateEntered` = ?)) AND ((? = 1 AND `BusinessPhone` IS NULL) OR (`BusinessPhone` = ?)) AND ((? = 1 AND `BusinessFax` IS NULL) OR (`BusinessFax` = ?)) AND ((? = 1 AND `SubscriberRelationship` IS NULL) OR (`SubscriberRelationship` = ?)) AND ((? = 1 AND `EmployerID` IS NULL) OR (`EmployerID` = ?)) AND ((? = 1 AND `NextOfKinID` IS NULL) OR (`NextOfKinID` = ?)) AND ((? = 1 AND `PtMiddleInitial` IS NULL) OR (`PtMiddleInitial` = ?)) AND ((? = 1 AND `NextOfKinRelationshipToPatient` IS NULL) OR (`NextOfKinRelationshipToPatient` = ?)) AND ((? = 1 AND `NoticeOfPracticePrivacy` IS NULL) OR (`NoticeOfPracticePrivacy` = ?)) AND ((? = 1 AND `NPPDate` IS NULL) OR (`NPPDate` = ?)) AND ((? = 1 AND `Suffix` IS NULL) OR (`Suffix` = ?)) AND ((? = 1 AND `Age` IS NULL) OR (`Age` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PatientID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PatientID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_OldID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="OldID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_OldID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OldID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtLastName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtPreviousLastName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtPreviousLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtPreviousLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtPreviousLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtFirstName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtFirstName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtFirstName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtFirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeAddress1" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeAddress1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeAddress1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeAddress2" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeAddress2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeAddress2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeCity" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeCity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeCity" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeCity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeState/Province/Region" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeState/Province/Region" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeState/Province/Region" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeState/Province/Region" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeZip" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeZip" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeZip" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeZip" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Country" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Country" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Country" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Country" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Citizenship" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Citizenship" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Citizenship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Citizenship" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtHomePhone" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtHomePhone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtHomePhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomePhone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmergencyPhoneNumber" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmergencyPhoneNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmergencyPhoneNumber" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmergencyPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtHomeFax" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtHomeFax" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtHomeFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomeFax" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Pager" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Pager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Pager" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Pager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmailAddress" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmailAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmailAddress" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmailAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtSSN" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtSSN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtSSN" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtSSN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DateOfBirth" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="DateOfBirth" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateOfBirth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateOfBirth" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Gender" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Gender" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EthnicAssociation" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EthnicAssociation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EthnicAssociation" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EthnicAssociation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Religion" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Religion" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MaritalStatus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="MaritalStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_MaritalStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="MaritalStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmploymentStatus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmploymentStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmploymentStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmploymentStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HospitalMR#" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HospitalMR#" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HospitalMR#" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HospitalMR#" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DateofExpire" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="DateofExpire" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateofExpire" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateofExpire" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Referral" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Referral" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Referral" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Referral" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CurrentPrimaryHCPId" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="CurrentPrimaryHCPId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CurrentPrimaryHCPId" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentPrimaryHCPId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist1" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist2" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist3" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist3" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist4" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist4" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_OriginalStaffHCP" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="OriginalStaffHCP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_OriginalStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OriginalStaffHCP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CurrentStaffHCP" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="CurrentStaffHCP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CurrentStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentStaffHCP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Active" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Original_Active" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Comments" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Comments" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Comments" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Comments" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DateEntered" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="DateEntered" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateEntered" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateEntered" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BusinessPhone" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BusinessPhone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BusinessPhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessPhone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BusinessFax" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BusinessFax" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BusinessFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessFax" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SubscriberRelationship" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SubscriberRelationship" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_SubscriberRelationship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SubscriberRelationship" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmployerID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmployerID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmployerID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmployerID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NextOfKinID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NextOfKinID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_NextOfKinID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtMiddleInitial" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtMiddleInitial" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtMiddleInitial" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtMiddleInitial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NextOfKinRelationshipToPatient" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NextOfKinRelationshipToPatient" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_NextOfKinRelationshipToPatient" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinRelationshipToPatient" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NoticeOfPracticePrivacy" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NoticeOfPracticePrivacy" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Original_NoticeOfPracticePrivacy" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="NoticeOfPracticePrivacy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NPPDate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NPPDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_NPPDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NPPDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Suffix" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Suffix" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Suffix" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Suffix" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Age" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Age" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `PatientTable` (`PatientID`, `OldID`, `PtLastName`, `PtPreviousLastName`, `PtFirstName`, `HomeAddress1`, `HomeAddress2`, `HomeCity`, `HomeState/Province/Region`, `HomeZip`, `Country`, `Citizenship`, `PtHomePhone`, `EmergencyPhoneNumber`, `PtHomeFax`, `Pager`, `EmailAddress`, `PtSSN`, `DateOfBirth`, `Gender`, `EthnicAssociation`, `Religion`, `MaritalStatus`, `EmploymentStatus`, `HospitalMR#`, `DateofExpire`, `Referral`, `CurrentPrimaryHCPId`, `Specialist1`, `Specialist2`, `Specialist3`, `Specialist4`, `OriginalStaffHCP`, `CurrentStaffHCP`, `Active`, `Comments`, `DateEntered`, `BusinessPhone`, `BusinessFax`, `SubscriberRelationship`, `EmployerID`, `NextOfKinID`, `PtMiddleInitial`, `NextOfKinRelationshipToPatient`, `NoticeOfPracticePrivacy`, `NPPDate`, `Suffix`, `Age`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PatientID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PatientID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="OldID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OldID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtPreviousLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtPreviousLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtFirstName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtFirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeAddress1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeAddress2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeCity" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeCity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeState/Province/Region" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeState/Province/Region" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeZip" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeZip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Country" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Country" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Citizenship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Citizenship" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtHomePhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomePhone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmergencyPhoneNumber" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmergencyPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtHomeFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomeFax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Pager" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Pager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmailAddress" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmailAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtSSN" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtSSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateOfBirth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateOfBirth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Gender" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EthnicAssociation" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EthnicAssociation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Religion" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="MaritalStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="MaritalStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmploymentStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmploymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HospitalMR#" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HospitalMR#" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateofExpire" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateofExpire" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Referral" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Referral" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CurrentPrimaryHCPId" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentPrimaryHCPId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist3" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist4" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="OriginalStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OriginalStaffHCP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CurrentStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentStaffHCP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Active" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Comments" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Comments" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateEntered" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateEntered" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BusinessPhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessPhone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BusinessFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessFax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="SubscriberRelationship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SubscriberRelationship" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmployerID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmployerID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="NextOfKinID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtMiddleInitial" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtMiddleInitial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="NextOfKinRelationshipToPatient" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinRelationshipToPatient" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="NoticeOfPracticePrivacy" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="NoticeOfPracticePrivacy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="NPPDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NPPDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Suffix" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Suffix" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Age" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PatientID, OldID, PtLastName, PtPreviousLastName, PtFirstName, HomeAddress1, HomeAddress2, HomeCity, [HomeState/Province/Region], HomeZip, Country, Citizenship, PtHomePhone, EmergencyPhoneNumber, PtHomeFax, Pager, EmailAddress, PtSSN, DateOfBirth, Gender, EthnicAssociation, Religion, MaritalStatus, EmploymentStatus, [HospitalMR#], DateofExpire, Referral, CurrentPrimaryHCPId, Specialist1, Specialist2, Specialist3, Specialist4, OriginalStaffHCP, CurrentStaffHCP, Active, Comments, DateEntered, BusinessPhone, BusinessFax, SubscriberRelationship, EmployerID, NextOfKinID, PtMiddleInitial, NextOfKinRelationshipToPatient, NoticeOfPracticePrivacy, NPPDate, Suffix, Age FROM PatientTable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `PatientTable` SET `PatientID` = ?, `OldID` = ?, `PtLastName` = ?, `PtPreviousLastName` = ?, `PtFirstName` = ?, `HomeAddress1` = ?, `HomeAddress2` = ?, `HomeCity` = ?, `HomeState/Province/Region` = ?, `HomeZip` = ?, `Country` = ?, `Citizenship` = ?, `PtHomePhone` = ?, `EmergencyPhoneNumber` = ?, `PtHomeFax` = ?, `Pager` = ?, `EmailAddress` = ?, `PtSSN` = ?, `DateOfBirth` = ?, `Gender` = ?, `EthnicAssociation` = ?, `Religion` = ?, `MaritalStatus` = ?, `EmploymentStatus` = ?, `HospitalMR#` = ?, `DateofExpire` = ?, `Referral` = ?, `CurrentPrimaryHCPId` = ?, `Specialist1` = ?, `Specialist2` = ?, `Specialist3` = ?, `Specialist4` = ?, `OriginalStaffHCP` = ?, `CurrentStaffHCP` = ?, `Active` = ?, `Comments` = ?, `DateEntered` = ?, `BusinessPhone` = ?, `BusinessFax` = ?, `SubscriberRelationship` = ?, `EmployerID` = ?, `NextOfKinID` = ?, `PtMiddleInitial` = ?, `NextOfKinRelationshipToPatient` = ?, `NoticeOfPracticePrivacy` = ?, `NPPDate` = ?, `Suffix` = ?, `Age` = ? WHERE ((`PatientID` = ?) AND ((? = 1 AND `OldID` IS NULL) OR (`OldID` = ?)) AND ((? = 1 AND `PtLastName` IS NULL) OR (`PtLastName` = ?)) AND ((? = 1 AND `PtPreviousLastName` IS NULL) OR (`PtPreviousLastName` = ?)) AND ((? = 1 AND `PtFirstName` IS NULL) OR (`PtFirstName` = ?)) AND ((? = 1 AND `HomeAddress1` IS NULL) OR (`HomeAddress1` = ?)) AND ((? = 1 AND `HomeAddress2` IS NULL) OR (`HomeAddress2` = ?)) AND ((? = 1 AND `HomeCity` IS NULL) OR (`HomeCity` = ?)) AND ((? = 1 AND `HomeState/Province/Region` IS NULL) OR (`HomeState/Province/Region` = ?)) AND ((? = 1 AND `HomeZip` IS NULL) OR (`HomeZip` = ?)) AND ((? = 1 AND `Country` IS NULL) OR (`Country` = ?)) AND ((? = 1 AND `Citizenship` IS NULL) OR (`Citizenship` = ?)) AND ((? = 1 AND `PtHomePhone` IS NULL) OR (`PtHomePhone` = ?)) AND ((? = 1 AND `EmergencyPhoneNumber` IS NULL) OR (`EmergencyPhoneNumber` = ?)) AND ((? = 1 AND `PtHomeFax` IS NULL) OR (`PtHomeFax` = ?)) AND ((? = 1 AND `Pager` IS NULL) OR (`Pager` = ?)) AND ((? = 1 AND `EmailAddress` IS NULL) OR (`EmailAddress` = ?)) AND ((? = 1 AND `PtSSN` IS NULL) OR (`PtSSN` = ?)) AND ((? = 1 AND `DateOfBirth` IS NULL) OR (`DateOfBirth` = ?)) AND ((? = 1 AND `Gender` IS NULL) OR (`Gender` = ?)) AND ((? = 1 AND `EthnicAssociation` IS NULL) OR (`EthnicAssociation` = ?)) AND ((? = 1 AND `Religion` IS NULL) OR (`Religion` = ?)) AND ((? = 1 AND `MaritalStatus` IS NULL) OR (`MaritalStatus` = ?)) AND ((? = 1 AND `EmploymentStatus` IS NULL) OR (`EmploymentStatus` = ?)) AND ((? = 1 AND `HospitalMR#` IS NULL) OR (`HospitalMR#` = ?)) AND ((? = 1 AND `DateofExpire` IS NULL) OR (`DateofExpire` = ?)) AND ((? = 1 AND `Referral` IS NULL) OR (`Referral` = ?)) AND ((? = 1 AND `CurrentPrimaryHCPId` IS NULL) OR (`CurrentPrimaryHCPId` = ?)) AND ((? = 1 AND `Specialist1` IS NULL) OR (`Specialist1` = ?)) AND ((? = 1 AND `Specialist2` IS NULL) OR (`Specialist2` = ?)) AND ((? = 1 AND `Specialist3` IS NULL) OR (`Specialist3` = ?)) AND ((? = 1 AND `Specialist4` IS NULL) OR (`Specialist4` = ?)) AND ((? = 1 AND `OriginalStaffHCP` IS NULL) OR (`OriginalStaffHCP` = ?)) AND ((? = 1 AND `CurrentStaffHCP` IS NULL) OR (`CurrentStaffHCP` = ?)) AND ((? = 1 AND `Active` IS NULL) OR (`Active` = ?)) AND ((? = 1 AND `Comments` IS NULL) OR (`Comments` = ?)) AND ((? = 1 AND `DateEntered` IS NULL) OR (`DateEntered` = ?)) AND ((? = 1 AND `BusinessPhone` IS NULL) OR (`BusinessPhone` = ?)) AND ((? = 1 AND `BusinessFax` IS NULL) OR (`BusinessFax` = ?)) AND ((? = 1 AND `SubscriberRelationship` IS NULL) OR (`SubscriberRelationship` = ?)) AND ((? = 1 AND `EmployerID` IS NULL) OR (`EmployerID` = ?)) AND ((? = 1 AND `NextOfKinID` IS NULL) OR (`NextOfKinID` = ?)) AND ((? = 1 AND `PtMiddleInitial` IS NULL) OR (`PtMiddleInitial` = ?)) AND ((? = 1 AND `NextOfKinRelationshipToPatient` IS NULL) OR (`NextOfKinRelationshipToPatient` = ?)) AND ((? = 1 AND `NoticeOfPracticePrivacy` IS NULL) OR (`NoticeOfPracticePrivacy` = ?)) AND ((? = 1 AND `NPPDate` IS NULL) OR (`NPPDate` = ?)) AND ((? = 1 AND `Suffix` IS NULL) OR (`Suffix` = ?)) AND ((? = 1 AND `Age` IS NULL) OR (`Age` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PatientID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PatientID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="OldID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OldID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtPreviousLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtPreviousLastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtFirstName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtFirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeAddress1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeAddress2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeCity" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeCity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeState/Province/Region" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeState/Province/Region" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HomeZip" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeZip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Country" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Country" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Citizenship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Citizenship" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtHomePhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomePhone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmergencyPhoneNumber" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmergencyPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtHomeFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomeFax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Pager" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Pager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmailAddress" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmailAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtSSN" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtSSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateOfBirth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateOfBirth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Gender" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EthnicAssociation" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EthnicAssociation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Religion" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="MaritalStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="MaritalStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmploymentStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmploymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="HospitalMR#" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HospitalMR#" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateofExpire" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateofExpire" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Referral" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Referral" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CurrentPrimaryHCPId" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentPrimaryHCPId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist3" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Specialist4" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="OriginalStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OriginalStaffHCP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CurrentStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentStaffHCP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Active" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Comments" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Comments" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateEntered" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateEntered" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BusinessPhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessPhone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BusinessFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessFax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="SubscriberRelationship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SubscriberRelationship" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="EmployerID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmployerID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="NextOfKinID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PtMiddleInitial" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtMiddleInitial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="NextOfKinRelationshipToPatient" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinRelationshipToPatient" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="NoticeOfPracticePrivacy" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="NoticeOfPracticePrivacy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="NPPDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NPPDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Suffix" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Suffix" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Age" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PatientID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PatientID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_OldID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="OldID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_OldID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OldID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtLastName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtPreviousLastName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtPreviousLastName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtPreviousLastName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtPreviousLastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtFirstName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtFirstName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtFirstName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtFirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeAddress1" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeAddress1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeAddress1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeAddress2" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeAddress2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeAddress2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeAddress2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeCity" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeCity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeCity" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeCity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeState/Province/Region" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeState/Province/Region" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeState/Province/Region" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeState/Province/Region" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HomeZip" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HomeZip" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HomeZip" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HomeZip" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Country" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Country" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Country" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Country" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Citizenship" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Citizenship" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Citizenship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Citizenship" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtHomePhone" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtHomePhone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtHomePhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomePhone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmergencyPhoneNumber" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmergencyPhoneNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmergencyPhoneNumber" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmergencyPhoneNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtHomeFax" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtHomeFax" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtHomeFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtHomeFax" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Pager" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Pager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Pager" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Pager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmailAddress" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmailAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmailAddress" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmailAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtSSN" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtSSN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtSSN" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtSSN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DateOfBirth" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="DateOfBirth" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateOfBirth" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateOfBirth" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Gender" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Gender" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EthnicAssociation" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EthnicAssociation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EthnicAssociation" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EthnicAssociation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Religion" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Religion" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MaritalStatus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="MaritalStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_MaritalStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="MaritalStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmploymentStatus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmploymentStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmploymentStatus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmploymentStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_HospitalMR#" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="HospitalMR#" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_HospitalMR#" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="HospitalMR#" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DateofExpire" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="DateofExpire" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateofExpire" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateofExpire" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Referral" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Referral" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Referral" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Referral" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CurrentPrimaryHCPId" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="CurrentPrimaryHCPId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CurrentPrimaryHCPId" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentPrimaryHCPId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist1" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist1" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist2" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist2" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist3" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist3" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Specialist4" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Specialist4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Specialist4" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Specialist4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_OriginalStaffHCP" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="OriginalStaffHCP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_OriginalStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="OriginalStaffHCP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CurrentStaffHCP" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="CurrentStaffHCP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CurrentStaffHCP" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="CurrentStaffHCP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Active" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Original_Active" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Comments" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Comments" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Comments" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Comments" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DateEntered" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="DateEntered" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateEntered" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateEntered" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BusinessPhone" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BusinessPhone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BusinessPhone" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessPhone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BusinessFax" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BusinessFax" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BusinessFax" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="BusinessFax" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SubscriberRelationship" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SubscriberRelationship" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_SubscriberRelationship" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SubscriberRelationship" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EmployerID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="EmployerID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_EmployerID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="EmployerID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NextOfKinID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NextOfKinID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_NextOfKinID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PtMiddleInitial" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PtMiddleInitial" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PtMiddleInitial" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PtMiddleInitial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NextOfKinRelationshipToPatient" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NextOfKinRelationshipToPatient" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_NextOfKinRelationshipToPatient" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="NextOfKinRelationshipToPatient" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NoticeOfPracticePrivacy" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NoticeOfPracticePrivacy" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Original_NoticeOfPracticePrivacy" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="NoticeOfPracticePrivacy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NPPDate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="NPPDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_NPPDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NPPDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Suffix" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Suffix" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Suffix" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Suffix" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Age" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Age" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PatientID" DataSetColumn="PatientID" />
+              <Mapping SourceColumn="OldID" DataSetColumn="OldID" />
+              <Mapping SourceColumn="PtLastName" DataSetColumn="PtLastName" />
+              <Mapping SourceColumn="PtPreviousLastName" DataSetColumn="PtPreviousLastName" />
+              <Mapping SourceColumn="PtFirstName" DataSetColumn="PtFirstName" />
+              <Mapping SourceColumn="HomeAddress1" DataSetColumn="HomeAddress1" />
+              <Mapping SourceColumn="HomeAddress2" DataSetColumn="HomeAddress2" />
+              <Mapping SourceColumn="HomeCity" DataSetColumn="HomeCity" />
+              <Mapping SourceColumn="HomeState/Province/Region" DataSetColumn="HomeState/Province/Region" />
+              <Mapping SourceColumn="HomeZip" DataSetColumn="HomeZip" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="Citizenship" DataSetColumn="Citizenship" />
+              <Mapping SourceColumn="PtHomePhone" DataSetColumn="PtHomePhone" />
+              <Mapping SourceColumn="EmergencyPhoneNumber" DataSetColumn="EmergencyPhoneNumber" />
+              <Mapping SourceColumn="PtHomeFax" DataSetColumn="PtHomeFax" />
+              <Mapping SourceColumn="Pager" DataSetColumn="Pager" />
+              <Mapping SourceColumn="EmailAddress" DataSetColumn="EmailAddress" />
+              <Mapping SourceColumn="PtSSN" DataSetColumn="PtSSN" />
+              <Mapping SourceColumn="DateOfBirth" DataSetColumn="DateOfBirth" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="EthnicAssociation" DataSetColumn="EthnicAssociation" />
+              <Mapping SourceColumn="Religion" DataSetColumn="Religion" />
+              <Mapping SourceColumn="MaritalStatus" DataSetColumn="MaritalStatus" />
+              <Mapping SourceColumn="EmploymentStatus" DataSetColumn="EmploymentStatus" />
+              <Mapping SourceColumn="HospitalMR#" DataSetColumn="HospitalMR#" />
+              <Mapping SourceColumn="DateofExpire" DataSetColumn="DateofExpire" />
+              <Mapping SourceColumn="Referral" DataSetColumn="Referral" />
+              <Mapping SourceColumn="CurrentPrimaryHCPId" DataSetColumn="CurrentPrimaryHCPId" />
+              <Mapping SourceColumn="Specialist1" DataSetColumn="Specialist1" />
+              <Mapping SourceColumn="Specialist2" DataSetColumn="Specialist2" />
+              <Mapping SourceColumn="Specialist3" DataSetColumn="Specialist3" />
+              <Mapping SourceColumn="Specialist4" DataSetColumn="Specialist4" />
+              <Mapping SourceColumn="OriginalStaffHCP" DataSetColumn="OriginalStaffHCP" />
+              <Mapping SourceColumn="CurrentStaffHCP" DataSetColumn="CurrentStaffHCP" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="Comments" DataSetColumn="Comments" />
+              <Mapping SourceColumn="DateEntered" DataSetColumn="DateEntered" />
+              <Mapping SourceColumn="BusinessPhone" DataSetColumn="BusinessPhone" />
+              <Mapping SourceColumn="BusinessFax" DataSetColumn="BusinessFax" />
+              <Mapping SourceColumn="SubscriberRelationship" DataSetColumn="SubscriberRelationship" />
+              <Mapping SourceColumn="EmployerID" DataSetColumn="EmployerID" />
+              <Mapping SourceColumn="NextOfKinID" DataSetColumn="NextOfKinID" />
+              <Mapping SourceColumn="PtMiddleInitial" DataSetColumn="PtMiddleInitial" />
+              <Mapping SourceColumn="NextOfKinRelationshipToPatient" DataSetColumn="NextOfKinRelationshipToPatient" />
+              <Mapping SourceColumn="NoticeOfPracticePrivacy" DataSetColumn="NoticeOfPracticePrivacy" />
+              <Mapping SourceColumn="NPPDate" DataSetColumn="NPPDate" />
+              <Mapping SourceColumn="Suffix" DataSetColumn="Suffix" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PatientDatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PatientDatabaseDataSet" msprop:Generator_UserDSName="PatientDatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PatientTable" msprop:Generator_TableClassName="PatientTableDataTable" msprop:Generator_TableVarName="tablePatientTable" msprop:Generator_TablePropName="PatientTable" msprop:Generator_RowDeletingName="PatientTableRowDeleting" msprop:Generator_RowChangingName="PatientTableRowChanging" msprop:Generator_RowEvHandlerName="PatientTableRowChangeEventHandler" msprop:Generator_RowDeletedName="PatientTableRowDeleted" msprop:Generator_UserTableName="PatientTable" msprop:Generator_RowChangedName="PatientTableRowChanged" msprop:Generator_RowEvArgName="PatientTableRowChangeEvent" msprop:Generator_RowClassName="PatientTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PatientID" msprop:Generator_ColumnVarNameInTable="columnPatientID" msprop:Generator_ColumnPropNameInRow="PatientID" msprop:Generator_ColumnPropNameInTable="PatientIDColumn" msprop:Generator_UserColumnName="PatientID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OldID" msprop:Generator_ColumnVarNameInTable="columnOldID" msprop:Generator_ColumnPropNameInRow="OldID" msprop:Generator_ColumnPropNameInTable="OldIDColumn" msprop:Generator_UserColumnName="OldID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtLastName" msprop:Generator_ColumnVarNameInTable="columnPtLastName" msprop:Generator_ColumnPropNameInRow="PtLastName" msprop:Generator_ColumnPropNameInTable="PtLastNameColumn" msprop:Generator_UserColumnName="PtLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtPreviousLastName" msprop:Generator_ColumnVarNameInTable="columnPtPreviousLastName" msprop:Generator_ColumnPropNameInRow="PtPreviousLastName" msprop:Generator_ColumnPropNameInTable="PtPreviousLastNameColumn" msprop:Generator_UserColumnName="PtPreviousLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtFirstName" msprop:Generator_ColumnVarNameInTable="columnPtFirstName" msprop:Generator_ColumnPropNameInRow="PtFirstName" msprop:Generator_ColumnPropNameInTable="PtFirstNameColumn" msprop:Generator_UserColumnName="PtFirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HomeAddress1" msprop:Generator_ColumnVarNameInTable="columnHomeAddress1" msprop:Generator_ColumnPropNameInRow="HomeAddress1" msprop:Generator_ColumnPropNameInTable="HomeAddress1Column" msprop:Generator_UserColumnName="HomeAddress1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HomeAddress2" msprop:Generator_ColumnVarNameInTable="columnHomeAddress2" msprop:Generator_ColumnPropNameInRow="HomeAddress2" msprop:Generator_ColumnPropNameInTable="HomeAddress2Column" msprop:Generator_UserColumnName="HomeAddress2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HomeCity" msprop:Generator_ColumnVarNameInTable="columnHomeCity" msprop:Generator_ColumnPropNameInRow="HomeCity" msprop:Generator_ColumnPropNameInTable="HomeCityColumn" msprop:Generator_UserColumnName="HomeCity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HomeState_x002F_Province_x002F_Region" msprop:Generator_ColumnVarNameInTable="_columnHomeState_Province_Region" msprop:Generator_ColumnPropNameInRow="_HomeState_Province_Region" msprop:Generator_ColumnPropNameInTable="_HomeState_Province_RegionColumn" msprop:Generator_UserColumnName="HomeState/Province/Region" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HomeZip" msprop:Generator_ColumnVarNameInTable="columnHomeZip" msprop:Generator_ColumnPropNameInRow="HomeZip" msprop:Generator_ColumnPropNameInTable="HomeZipColumn" msprop:Generator_UserColumnName="HomeZip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Citizenship" msprop:Generator_ColumnVarNameInTable="columnCitizenship" msprop:Generator_ColumnPropNameInRow="Citizenship" msprop:Generator_ColumnPropNameInTable="CitizenshipColumn" msprop:Generator_UserColumnName="Citizenship" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtHomePhone" msprop:Generator_ColumnVarNameInTable="columnPtHomePhone" msprop:Generator_ColumnPropNameInRow="PtHomePhone" msprop:Generator_ColumnPropNameInTable="PtHomePhoneColumn" msprop:Generator_UserColumnName="PtHomePhone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmergencyPhoneNumber" msprop:Generator_ColumnVarNameInTable="columnEmergencyPhoneNumber" msprop:Generator_ColumnPropNameInRow="EmergencyPhoneNumber" msprop:Generator_ColumnPropNameInTable="EmergencyPhoneNumberColumn" msprop:Generator_UserColumnName="EmergencyPhoneNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtHomeFax" msprop:Generator_ColumnVarNameInTable="columnPtHomeFax" msprop:Generator_ColumnPropNameInRow="PtHomeFax" msprop:Generator_ColumnPropNameInTable="PtHomeFaxColumn" msprop:Generator_UserColumnName="PtHomeFax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pager" msprop:Generator_ColumnVarNameInTable="columnPager" msprop:Generator_ColumnPropNameInRow="Pager" msprop:Generator_ColumnPropNameInTable="PagerColumn" msprop:Generator_UserColumnName="Pager" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmailAddress" msprop:Generator_ColumnVarNameInTable="columnEmailAddress" msprop:Generator_ColumnPropNameInRow="EmailAddress" msprop:Generator_ColumnPropNameInTable="EmailAddressColumn" msprop:Generator_UserColumnName="EmailAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtSSN" msprop:Generator_ColumnVarNameInTable="columnPtSSN" msprop:Generator_ColumnPropNameInRow="PtSSN" msprop:Generator_ColumnPropNameInTable="PtSSNColumn" msprop:Generator_UserColumnName="PtSSN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateOfBirth" msprop:Generator_ColumnVarNameInTable="columnDateOfBirth" msprop:Generator_ColumnPropNameInRow="DateOfBirth" msprop:Generator_ColumnPropNameInTable="DateOfBirthColumn" msprop:Generator_UserColumnName="DateOfBirth" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EthnicAssociation" msprop:Generator_ColumnVarNameInTable="columnEthnicAssociation" msprop:Generator_ColumnPropNameInRow="EthnicAssociation" msprop:Generator_ColumnPropNameInTable="EthnicAssociationColumn" msprop:Generator_UserColumnName="EthnicAssociation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Religion" msprop:Generator_ColumnVarNameInTable="columnReligion" msprop:Generator_ColumnPropNameInRow="Religion" msprop:Generator_ColumnPropNameInTable="ReligionColumn" msprop:Generator_UserColumnName="Religion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaritalStatus" msprop:Generator_ColumnVarNameInTable="columnMaritalStatus" msprop:Generator_ColumnPropNameInRow="MaritalStatus" msprop:Generator_ColumnPropNameInTable="MaritalStatusColumn" msprop:Generator_UserColumnName="MaritalStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmploymentStatus" msprop:Generator_ColumnVarNameInTable="columnEmploymentStatus" msprop:Generator_ColumnPropNameInRow="EmploymentStatus" msprop:Generator_ColumnPropNameInTable="EmploymentStatusColumn" msprop:Generator_UserColumnName="EmploymentStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HospitalMR_x0023_" msprop:Generator_ColumnVarNameInTable="_columnHospitalMR_" msprop:Generator_ColumnPropNameInRow="_HospitalMR_" msprop:Generator_ColumnPropNameInTable="_HospitalMR_Column" msprop:Generator_UserColumnName="HospitalMR#" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateofExpire" msprop:Generator_ColumnVarNameInTable="columnDateofExpire" msprop:Generator_ColumnPropNameInRow="DateofExpire" msprop:Generator_ColumnPropNameInTable="DateofExpireColumn" msprop:Generator_UserColumnName="DateofExpire" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Referral" msprop:Generator_ColumnVarNameInTable="columnReferral" msprop:Generator_ColumnPropNameInRow="Referral" msprop:Generator_ColumnPropNameInTable="ReferralColumn" msprop:Generator_UserColumnName="Referral" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrentPrimaryHCPId" msprop:Generator_ColumnVarNameInTable="columnCurrentPrimaryHCPId" msprop:Generator_ColumnPropNameInRow="CurrentPrimaryHCPId" msprop:Generator_ColumnPropNameInTable="CurrentPrimaryHCPIdColumn" msprop:Generator_UserColumnName="CurrentPrimaryHCPId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Specialist1" msprop:Generator_ColumnVarNameInTable="columnSpecialist1" msprop:Generator_ColumnPropNameInRow="Specialist1" msprop:Generator_ColumnPropNameInTable="Specialist1Column" msprop:Generator_UserColumnName="Specialist1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Specialist2" msprop:Generator_ColumnVarNameInTable="columnSpecialist2" msprop:Generator_ColumnPropNameInRow="Specialist2" msprop:Generator_ColumnPropNameInTable="Specialist2Column" msprop:Generator_UserColumnName="Specialist2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Specialist3" msprop:Generator_ColumnVarNameInTable="columnSpecialist3" msprop:Generator_ColumnPropNameInRow="Specialist3" msprop:Generator_ColumnPropNameInTable="Specialist3Column" msprop:Generator_UserColumnName="Specialist3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Specialist4" msprop:Generator_ColumnVarNameInTable="columnSpecialist4" msprop:Generator_ColumnPropNameInRow="Specialist4" msprop:Generator_ColumnPropNameInTable="Specialist4Column" msprop:Generator_UserColumnName="Specialist4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OriginalStaffHCP" msprop:Generator_ColumnVarNameInTable="columnOriginalStaffHCP" msprop:Generator_ColumnPropNameInRow="OriginalStaffHCP" msprop:Generator_ColumnPropNameInTable="OriginalStaffHCPColumn" msprop:Generator_UserColumnName="OriginalStaffHCP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrentStaffHCP" msprop:Generator_ColumnVarNameInTable="columnCurrentStaffHCP" msprop:Generator_ColumnPropNameInRow="CurrentStaffHCP" msprop:Generator_ColumnPropNameInTable="CurrentStaffHCPColumn" msprop:Generator_UserColumnName="CurrentStaffHCP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateEntered" msprop:Generator_ColumnVarNameInTable="columnDateEntered" msprop:Generator_ColumnPropNameInRow="DateEntered" msprop:Generator_ColumnPropNameInTable="DateEnteredColumn" msprop:Generator_UserColumnName="DateEntered" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BusinessPhone" msprop:Generator_ColumnVarNameInTable="columnBusinessPhone" msprop:Generator_ColumnPropNameInRow="BusinessPhone" msprop:Generator_ColumnPropNameInTable="BusinessPhoneColumn" msprop:Generator_UserColumnName="BusinessPhone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusinessFax" msprop:Generator_ColumnVarNameInTable="columnBusinessFax" msprop:Generator_ColumnPropNameInRow="BusinessFax" msprop:Generator_ColumnPropNameInTable="BusinessFaxColumn" msprop:Generator_UserColumnName="BusinessFax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubscriberRelationship" msprop:Generator_ColumnVarNameInTable="columnSubscriberRelationship" msprop:Generator_ColumnPropNameInRow="SubscriberRelationship" msprop:Generator_ColumnPropNameInTable="SubscriberRelationshipColumn" msprop:Generator_UserColumnName="SubscriberRelationship" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployerID" msprop:Generator_ColumnVarNameInTable="columnEmployerID" msprop:Generator_ColumnPropNameInRow="EmployerID" msprop:Generator_ColumnPropNameInTable="EmployerIDColumn" msprop:Generator_UserColumnName="EmployerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NextOfKinID" msprop:Generator_ColumnVarNameInTable="columnNextOfKinID" msprop:Generator_ColumnPropNameInRow="NextOfKinID" msprop:Generator_ColumnPropNameInTable="NextOfKinIDColumn" msprop:Generator_UserColumnName="NextOfKinID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PtMiddleInitial" msprop:Generator_ColumnVarNameInTable="columnPtMiddleInitial" msprop:Generator_ColumnPropNameInRow="PtMiddleInitial" msprop:Generator_ColumnPropNameInTable="PtMiddleInitialColumn" msprop:Generator_UserColumnName="PtMiddleInitial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NextOfKinRelationshipToPatient" msprop:Generator_ColumnVarNameInTable="columnNextOfKinRelationshipToPatient" msprop:Generator_ColumnPropNameInRow="NextOfKinRelationshipToPatient" msprop:Generator_ColumnPropNameInTable="NextOfKinRelationshipToPatientColumn" msprop:Generator_UserColumnName="NextOfKinRelationshipToPatient" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoticeOfPracticePrivacy" msprop:Generator_ColumnVarNameInTable="columnNoticeOfPracticePrivacy" msprop:Generator_ColumnPropNameInRow="NoticeOfPracticePrivacy" msprop:Generator_ColumnPropNameInTable="NoticeOfPracticePrivacyColumn" msprop:Generator_UserColumnName="NoticeOfPracticePrivacy" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NPPDate" msprop:Generator_ColumnVarNameInTable="columnNPPDate" msprop:Generator_ColumnPropNameInRow="NPPDate" msprop:Generator_ColumnPropNameInTable="NPPDateColumn" msprop:Generator_UserColumnName="NPPDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Suffix" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInRow="Suffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" msprop:Generator_UserColumnName="Suffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PatientTable" />
+      <xs:field xpath="mstns:PatientID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
