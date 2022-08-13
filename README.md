@@ -9,3 +9,7 @@ The second form displays a large amount of medical data on the patient. The user
 This project was originally completed in Fall 2020 during my Sophomore year of my IT Degree. 
 
 ## Examples
+
+![projectscreenshot1](https://user-images.githubusercontent.com/107071736/184503179-8660788a-b472-44a2-ba82-53ebd8dd4c99.PNG)
+
+![projectscreenshot2](https://user-images.githubusercontent.com/107071736/184503185-f4afaabb-922e-4c2c-8315-1f4105deff24.PNG)
